@@ -1,0 +1,80 @@
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Mont";
+  src:
+          url("./fonts/MonumentExtended-Regular.woff") format("woff"),
+          url("./fonts/MonumentExtended-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  font-family: "Mont";
+  src:
+          url("./fonts/MonumentExtended-Ultrabold.woff") format("woff"),
+          url("./fonts/MonumentExtended-Ultrabold.woff2") format("woff2");
+}
+
+body, main {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #03071e;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-family: 'Mont',  sans-serif;
+}
+
+.cursor, .follow {
+  position: absolute;
+  pointer-events: none;
+  width: .4em;
+  height: .4em;
+  transform: translate(-50%, -50%);
+}
+
+.cursor {
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.follow {
+  padding: 2rem;
+  border: 0.1rem solid #ffffff;
+  transition: all .25s ease-in;
+  border-radius: 100%;
+}
+
+.follow.on-focus {
+  transform: translate(-0.55rem, -0.55rem);
+  border: 0.1rem solid #ffffff;
+  border-radius: 0;
+  padding: 0.46rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: grey;
+  white-space: nowrap;
+}
+
+.button:hover {
+  color: #ffffff;
+}
+

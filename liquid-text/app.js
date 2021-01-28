@@ -1,9 +1,12 @@
 (() => {
-   container = document.getElementById('main')
+   // https://blotter.js.org/#/documentation
+   let container = document.getElementById('main')
    const text = new Blotter.Text('Hello, handsome', {
       family: 'serif',
       size: 120,
-      fill: '#fff'
+      fill: '#fff',
+      paddingRight: 50,
+      paddingLeft: 50,
    })
 
    let material = new Blotter.LiquidDistortMaterial();
