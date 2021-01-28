@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  object-fit: cover;
+}
+
+.distortion {
+  height: 461px;
+  width: 343px;
+  position: absolute;
+}
+
+.distortion1 {
+  top: -150px;
+  right: -350px;
+}
+.distortion2 {
+  top: -150px;
+  right: 130px;
+}
