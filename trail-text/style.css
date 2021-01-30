@@ -1,0 +1,54 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Mont";
+  src:
+          url("./fonts/MonumentExtended-Regular.woff") format("woff"),
+          url("./fonts/MonumentExtended-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  font-family: "Mont";
+  src:
+          url("./fonts/MonumentExtended-Ultrabold.woff") format("woff"),
+          url("./fonts/MonumentExtended-Ultrabold.woff2") format("woff2");
+}
+
+body, main {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #03071e;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-weight: 400;
+  font-family: 'Mont',  sans-serif;
+}
+
+.text {
+  position: absolute;
+  pointer-events: none;
+  font-size: 6em;
+  -webkit-text-stroke: 1.6px #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #03071e;
+  letter-spacing: .1em;
+  white-space: nowrap;
+}
+
+.text span {
+  color: #ffffff;
+}
+
+.cursor--2 {
+  transform: translate(0, 200px);
+}
+.cursor--3 {
+  transform: translate(0, 400px);
+}
