@@ -1,11 +1,73 @@
+html,
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
+  cursor: url('cursor.png'), auto!important;
+  background: #161616;
 }
 
-canvas {
-  background: #03071e;
-  width: 100vw;
-  height: 100vh;
+header {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'arial narrow', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  font-size: 30px;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.container {
+  position: absolute;
+  width: 200%;
+  height: 200vh;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 4em 0;
+}
+
+.block {
+  width: 400px;
+  height: 500px;
+  background-color: gray;
+  margin: 1em;
+  filter: grayscale(1);
+  opacity: 0.4;
+  transition: 1s;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.block:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.block-1 {
+  background-image: url('./img/1.jpg');
+}
+.block-2 {
+  background-image: url('./img/2.jpg');
+}
+.block-3 {
+  background-image: url('./img/3.jpg');
+}
+.block-4 {
+  background-image: url('./img/4.jpg');
+}
+.block-5 {
+  background-image: url('./img/5.jpg');
+}
+.block-6 {
+  background-image: url('./img/6.jpg');
 }
